@@ -1,0 +1,159 @@
+.header {
+	position: relative;
+	min-height: 100vh;
+	@media (max-width:463px) {
+		min-height: 420px;
+	}
+}
+.heder {
+position: relative;
+z-index: 3;
+
+		// .heder__container
+
+		&__container {
+			
+		}
+		&__body {
+			position: relative;
+			z-index: 2;
+			text-align: center;
+			
+			
+			padding: 40px 0 40px 0;
+		}
+		&__navigation {
+			margin: 0 0 40px 0;
+			
+				@media (min-width:463px) {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin: 0 0 200px 0;
+				}
+
+		}
+		&__title {
+			color: #ffffff;
+			font-family: "Quicksand Bold";
+			font-size: 60px;
+			font-weight: 400;
+			margin: 0 0 15px 0;
+			@media (max-width:463px) {
+				font-size: 30px;
+			}
+			
+		}
+		&__subtitle {
+			color: #ffffff;
+			font-family: "Quicksand Book";
+			font-size: 20px;
+			font-weight: 400;
+			max-width: 586px;
+			margin: 0 auto;
+			@media (max-width:463px) {
+				font-size: 14px;
+			}
+		}
+
+
+		// .heder__logo
+
+		&__logo {
+		}
+
+		// .heder__nav
+
+		&__nav {
+			display: flex;
+			@media (max-width:463px) {
+				justify-content: center;
+				margin-top: 20px;
+			}
+		}
+
+		// .heder__list
+
+		&__list {
+			margin-left: 50px;
+			&:first-child {
+				margin-left: 0;
+			}
+		}
+
+		// .heder__link
+
+		&__link {
+			color: #ffff;
+			font-family: "Quicksand Bold";
+			font-size: 18px;
+			font-weight: 400;
+			transition: 0.5s;
+				&:hover {
+					color: rgb(167, 181, 218);
+					text-decoration: underline;
+				}
+			
+		}
+		&__icon {
+			
+			position: absolute;
+			bottom: -100px;
+			left: 50%;
+			
+			background: url("../img/fa-chevron-down.png") 0  0 no-repeat;
+			width: 34px;
+			height: 23px;
+			animation: 1.5s ease 0s normal none infinite running bounce-fade;
+			
+			@keyframes bounce-fade {
+				0% {
+				  bottom: -150px;
+				  opacity: 0;
+				}
+				100% {
+				  bottom: -230px;
+				  opacity: 1;
+				}
+			}
+			@media (max-width:650px) {
+				@keyframes bounce-fade {
+					0% {
+					  bottom: -30px;
+					  opacity: 0;
+					}
+					100% {
+					  bottom: -50px;
+					  opacity: 1;
+					}
+				}
+			}
+	
+	
+		}
+		
+
+		// .heder__bg
+
+		&__bg {
+			
+			display: flex;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+
+		}
+}
+
+.ibg {
+
+	img {
+		display: none;
+	}
+}
+
+  
